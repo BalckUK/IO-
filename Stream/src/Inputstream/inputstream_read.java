@@ -16,5 +16,6 @@ public class inputstream_read {
 			if(readByte == -1) break;
 			System.out.println((char)readByte);
 		}
+		is.close();
 	}
 }
