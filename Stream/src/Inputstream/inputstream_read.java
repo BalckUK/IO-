@@ -14,7 +14,7 @@ public class inputstream_read {
 		while(true) {
 			readByte = is.read();
 			if(readByte == -1) break;
-			System.out.println((char)readByte);
+			System.out.print((char)readByte);
 		}
 		is.close();
 	}

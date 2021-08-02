@@ -11,6 +11,7 @@ public class FileExample {
 		File file1 = new File("C:/Temp/file1.txt");
 		File file2 = new File("C:/Temp/file2.txt");
 		File file3 = new File(new URI("file:/C:/Temp/file3.txt"));
+		File file4 = new File("C:/Temp/tt123.hwpx");
 		
 		if(dir.exists()  == false) {
 			dir.mkdirs();
@@ -23,6 +24,9 @@ public class FileExample {
 		}
 		if(file3.exists() == false) {
 			file3.createNewFile();
+		}
+		if(file4.exists() == false) {
+			file4.createNewFile();
 		}
 		
 		File temp = new File("C:/Temp");
