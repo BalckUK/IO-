@@ -23,7 +23,8 @@ public class TestBuilder {
 		StringBuilder su = new StringBuilder();
 		/*
 		 * 이러한 식으로 StringBuilder를 사용하면 불필요한 객체를 생성하는 것을 방지할 수 있다 
-		 * 즉 메모리를 더 효율적으로 활용할 수 있다
+		 * 즉 메모리를 더 효율적으로 활용할 수 있다 또한 new String할 경우에는 차후에
+		 * 삽입, 삭제등을 할 때 또 객체를 생성해야 하지만 StringBuilder는 그러한 문제를 해결할 수 있다
 		 * */
 		while(reader1.read(bytes) != -1) {
 			su.append(bytes);
