@@ -20,7 +20,7 @@ public class inputstream_read2 {
 			if (readByteNo == -1) {
 				break;
 			}
-			data += new String(readBytes, 0, readByteNo);
+			data += new String(readBytes, 0, readByteNo,"UTF-8");
 		}
 		System.out.println(data);
 		is.close();

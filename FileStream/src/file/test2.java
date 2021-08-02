@@ -10,9 +10,12 @@ public class test2 {
 		char[] cbuf = new char[2];
 		String data= "";
 		while((readCharNo = reader.read(cbuf)) != -1) {
+			System.out.println(readCharNo);
 			data += new String(cbuf, 0, readCharNo);
+			System.out.println(data);
 		}
-		System.out.println(data);
+		//System.out.println(data);
 		reader.close();
+		
 	}
 }

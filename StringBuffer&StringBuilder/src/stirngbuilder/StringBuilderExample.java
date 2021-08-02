@@ -17,9 +17,7 @@ public class StringBuilderExample {
 		 * 멀티 스레드환경 : StringBuffer를 사용
 		 * 단일 스레드환경 : StringBuilder를 사용
 		 * */
-		
 		StringBuilder sb = new StringBuilder();
-		
 		sb.append("Java ");
 		sb.append("Program Study");
 		System.out.println(sb.toString());
