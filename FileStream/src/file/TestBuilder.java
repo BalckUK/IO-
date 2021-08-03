@@ -19,6 +19,8 @@ public class TestBuilder {
 		System.out.println(data);
 		
 		
+		
+		//성능개선
 		Reader reader1 = new FileReader("C:/Temp/test.txt");
 		StringBuilder su = new StringBuilder();
 		/*

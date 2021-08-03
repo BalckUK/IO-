@@ -15,9 +15,11 @@ public class GetBytesExample {
 
 		
 		try {
+			//인코딩
 			byte[] bytes2 = str.getBytes("EUC-KR");
 			System.out.println("bytes2.length : " + bytes2.length);
 			
+			//디코딩
 			String str2 = new String(bytes2,"EUC-KR");
 			System.out.println("bytes1 -> String : " + str2);
 			

@@ -34,6 +34,25 @@ public class BufferedOutputStreamExample {
 		fis.close();
 		
 		System.out.println("사용하지 않았을 때 : "+ (end-start)+ "ms");
+		
+		fis = new FileInputStream(
+				"C:\\Users\\haga5\\Desktop\\IO기반 입출력 및 네트워킹\\FileStream\\src\\bufferedoutputStream\\house1.jpg");
+		
+		bis = new BufferedInputStream(fis);
+		fos = new FileOutputStream("C:/Temp1/house1.jpg");
+		bos = new BufferedOutputStream(fos);
+		start = System.currentTimeMillis();
+		while((data = bis.read()) != -1) {
+			bos.write(data);
+		}
+		fos.flush();
+		end = System.currentTimeMillis();
+		bos.close();
+		fos.close();
+		bis.close();
+		fis.close();
+		
+		System.out.println("사용했을 때 : "+ (end-start)+ "ms");
 	}
 
 }
